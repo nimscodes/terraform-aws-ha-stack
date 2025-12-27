@@ -24,6 +24,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::483636501397:role/GitHubActions-Terraform-HaWeb
           aws-region: us-east-1
+          audience: sts.amazonaws.com
 
       - name: Terraform Init
         run: terraform init
