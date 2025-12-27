@@ -23,7 +23,7 @@ jobs:
         run: |
           echo "GITHUB_REPOSITORY=$GITHUB_REPOSITORY"
           echo "GITHUB_REF=$GITHUB_REF"
-          echo "GITHUB_SHA=$GITHUB_SHA"
+          echo "GITHUB_EVENT_NAME=$GITHUB_EVENT_NAME"
 
 
       - name: Configure AWS credentials (OIDC)
